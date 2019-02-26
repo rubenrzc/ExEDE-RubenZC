@@ -13,7 +13,12 @@ import javax.swing.border.EmptyBorder;
 import java.awt.Color;
 import javax.swing.border.LineBorder;
 import javax.swing.SwingConstants;
-
+/**
+ * Documentacion Examen EDE 2ev
+ * @author 1dam Ruben Zaranton Caro
+ * @version "Version 1,2019"
+ * @
+ */
 @SuppressWarnings("serial")
 public class Principal extends JFrame {
 	private JPanel contentPane;
@@ -57,6 +62,7 @@ public class Principal extends JFrame {
 		btnEmple.setBounds(116, 98, 202, 23);
 		contentPane.add(btnEmple);
 		btnEmple.addActionListener(new ActionListener() {
+			//TODO esta clase se encarga del mantenimiento de los datos de los empleados(altas,bajas,modificaciones)
 			public void actionPerformed(ActionEvent arg0) {
 				OperacionesEmple opEmple=new OperacionesEmple();
 				opEmple.setVisible(true);
@@ -66,6 +72,7 @@ public class Principal extends JFrame {
 		JButton btnDepart = new JButton("Operaciones Departamentos");
 		btnDepart.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
+				//TODO esta clase se encarga del mantenimiento de los datos del departamento(altas,bajas,modificaciones)
 				OperacionesDepart opDepart=new OperacionesDepart();
 				opDepart.setVisible(true);
 			}
@@ -77,6 +84,7 @@ public class Principal extends JFrame {
 		JButton btnConsultas = new JButton("Consultas a la BD");
 		btnConsultas.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
+				//TODO esta clase se encarga de realizar consultas estadisticas de empleados y departamentos.Listado de empleados y de departamentos
 				Consultas con=new Consultas();
 				con.setVisible(true);
 			}
